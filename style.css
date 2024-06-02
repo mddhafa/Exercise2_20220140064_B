@@ -1,0 +1,92 @@
+
+.home .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Menggunakan min-height agar sesuai dengan konten */
+    flex-direction: column; /* Mengatur arah stacking menjadi vertikal */
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+.navbar-custom{
+    background-color: #000000;
+}
+
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 450px}
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;} 
+  }
+
+  button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #333;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 10px
+}
+
+button:hover{
+    background-color: #fdfdfd;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+.btn1{
+    text-align: right;
+}
+.btn2{
+    text-align: left;
+}
+
+  .footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Menghapus bottom: 0; dan mengubah lebar menjadi 100% */
+    bottom: 0; /* Menggeser footer ke bagian bawah */
+    left: 0; /* Meletakkan footer di sepanjang sisi kiri */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.social-icons a:hover {
+    color: rgb(163, 162, 162);
+    transform: scaleX(2);
+}
+
